@@ -2,5 +2,11 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = [
+    "@openzeppelin/contracts-upgradeable=lib/openzeppelin-contracts-upgradeable/contracts",
+]
+fs_permissions = [
+    { access = "read", path = "./broadcast" },
+] #instead of unuseful `ffi=true`
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
